@@ -14,3 +14,37 @@ html {
 }
 
 // Your SASS Journey Starts Here
+.container {
+    @include span-columns(3);
+    @include shift(2);
+    position: relative;
+    width: 300px;
+    margin: auto;
+    border: 2px solid black;
+}
+
+ul {
+    background: #5C5E63;
+    color: white;
+    padding: 10px;
+
+ul span {
+    display: inline;
+    float: right;
+}
+}
+.header:hover {
+    background: #86AC33;
+    color: #5C5E63;
+    }
+
+ol {
+    background: #E5E5E5;
+}
+
+ol li {
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+
+}
+
