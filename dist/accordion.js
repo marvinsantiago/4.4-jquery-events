@@ -1,7 +1,12 @@
-var buttonsEl = $('headers');
-var subMenu = $('submenu');
+var buttonsEl = $('.headers');
+var subMenu = $('.submenu');
 
-$('.headers').click(function(){
-$('.submenu').slideUp("slow", function(){});
-$(this).next().slideDown("slow", function(){});
+buttonsEl.click(function() {
+  $(this).addClass('active');
+  $(this).siblings('.headers').removeClass('active');
+
+  var targetCurrent = $(this).next('.submenu');
+  targetCurrent.slideDown('slow');
+
+  targetCurrent.siblings('.submenu').slideUp('slow');
 });
