@@ -40,9 +40,6 @@ button:after {
     content: "";
     border-bottom-color: #333;
 }
-button:active {
-    color: #83878D;
-}
 .submenu {
     color: #6B7590;
     background-color: #E5E5E5;
@@ -51,6 +48,7 @@ button:active {
 .submenu li {
     line-height: 1.3em;
     padding-left: 10px;
+    font-weight: bold;
 }
 .headers i {
     padding-right: 15px;
@@ -58,5 +56,11 @@ button:active {
 .headers {
     font-size: 1.1em;
 }
+
+.active {
+    color: #ffffff;
+    background-color: #93A743;
+}
+
 
 
