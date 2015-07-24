@@ -18,7 +18,7 @@ body {
     font-family: "Helvetica Neue", "Helvetica", sans-serif;
 }
 .accordion {
-    width: 250px;
+    width: 300px;
     border: 2px solid black;
     background-color: gray;
 }
@@ -29,6 +29,8 @@ button {
     background-color: #5D5F64;
     border: 1px double #4e4f51;
     text-decoration: none;
+    text-align: left;
+    font-weight: bold;
 }
 button:hover {
     color: #ffffff;
@@ -38,12 +40,23 @@ button:after {
     content: "";
     border-bottom-color: #333;
 }
+button:active {
+    color: #83878D;
+}
 .submenu {
     color: #6B7590;
     background-color: #E5E5E5;
+    display: none;
+}
+.submenu li {
+    line-height: 1.3em;
+    padding-left: 10px;
 }
 .headers i {
     padding-right: 15px;
+}
+.headers {
+    font-size: 1.1em;
 }
 
 
