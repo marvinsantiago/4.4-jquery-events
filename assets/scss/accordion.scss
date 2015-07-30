@@ -1,0 +1,66 @@
+@import 'reset';
+$fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
+
+@import 'font-awesome';
+@import 'bourbon';
+@import 'neat';
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// Your SASS Journey Starts Here
+body {
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+.accordion {
+    width: 300px;
+    border: 2px solid black;
+    background-color: gray;
+}
+button {
+    color: #ffffff;
+    border: 1px;
+    width: 100%;
+    background-color: #5D5F64;
+    border: 1px double #4e4f51;
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+}
+button:hover {
+    color: #ffffff;
+    background-color: #85AB32;
+}
+button:after {
+    content: "";
+    border-bottom-color: #333;
+}
+.submenu {
+    color: #6B7590;
+    background-color: #E5E5E5;
+    display: none;
+}
+.submenu li {
+    line-height: 1.3em;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.headers i {
+    padding-right: 15px;
+}
+.headers {
+    font-size: 1.1em;
+}
+
+.active {
+    color: #ffffff;
+    background-color: #93A743;
+}
+
+
+
